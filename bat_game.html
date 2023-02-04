@@ -1,0 +1,56 @@
+<html>
+  <!--I do not own any of the images used for this game.-->
+<body>
+<audio id="gameaudio" autoplay loop>
+<source src="file:///Users/TIca/Desktop/Games%20html/music_soundtrack/Baleful%20Sonata%20-%20Exodus%20of%20Vermin.mp3" type="audio/mp3">
+</audio>
+<audio id="audio">
+<source src="SPLAT Crush 01.wav" type="audio/wav">
+</audio>
+<script>
+ audio = document.getElementById("audio")
+ var score = 0
+ function MyFunction1(){
+audio.play();
+score++
+document.getElementById("h2").innerHTML = (score)
+}
+</script>
+<h1 id="h2">0</h1>
+<img src="bat_game/bat_1.png" class="bat1" id="bat1" onClick="MyFunction1()">
+<center>
+<img src="bat_game/bat_background.png" class="bg">
+</center>
+<style>
+h1{
+ position:relative;
+ left:220px;
+ top:282px;
+ font-style:monospace;
+}
+.bat1{
+  height:160px;
+  width:300px;
+  position:relative;
+  left:400px;
+  top:400px;
+  animation:MyAnimation 9s infinite;
+}
+.bat1:active{
+ content:url("bat_game/bat_1_red.png");
+}
+ @keyframes MyAnimation{
+ 0% {top:460px; left:200px;}
+ 10% {top:700px; left:60px;}
+ 15% {top:500px; left:800px;}
+ 20% {top:600px; left:700px;}
+ 25% {top:300px; left:100px;}
+ 50% {top:480px; left:600px;}
+ 75% {top:200px; left:500px;}
+ 80% {top:400px; left:600px;}
+ 90% {top:600px; left:700px;}
+ 100% {top:460px; left:200px;}
+}
+</style>
+</body>
+</html>

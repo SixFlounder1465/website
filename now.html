@@ -1,0 +1,80 @@
+<html style="background-color: black;">
+   <head>
+      <title>My website</title>
+   </head>
+   <body>
+      <div class="menu">
+         <a href="index.html"><button class="menu-button">Home</button></a>
+         <a href="Games.html"><button class="menu-button">Games</button></a>
+         <a href="programming.html"><button class="menu-button" style="width:95px;">Programming</button></a>
+         <button class="menu-button" style="color:white; border: 2px solid white;">Now</button>
+        </div>
+      <center>
+         <h1 class="animated-text" style="position:relative; top:20px;">What I am working on right now</h1>
+         <h2 class="text">
+            Right now I am working on a funny game called "Rick runner", where you are Rick Astely and you need to pass different levels and fight memes. Right now, it is just a test.
+         </h2>
+
+         <iframe src="rick_game.mp4" width="900" height="600" style="position:relative; top:20px;"></iframe>
+      </center>
+   </body>
+   <style>
+
+      .menu {
+         height: 50px;
+         width: 100%;
+         background-color: #00f2ff;
+         border: 2px solid white;
+         border-radius: 5px;
+         }
+   
+         .menu-button {
+         position:relative;
+         top:12.5px;
+         left: 50px;
+         background-color: transparent;
+         border-radius: 5px white solid;
+         font-family: 'monospace', sans-serif;
+         width:75px;
+         height:25px;
+         border-radius: 20px ;
+         margin-left: 20px;
+         margin-right: 20px;
+         transition: 0.2s;
+         }
+   
+         .menu-button:hover{
+         box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px white;
+         border: 3px solid white;
+         }
+   
+         .text{
+         width:700px;
+         color:#00FFEA;
+         font-family: 'monospace', sans-serif;
+         position:relative;
+         top:20px;
+         text-align: left;
+         }
+   
+         .animated-text {
+         text-align: center;
+         font-family: 'monospace', sans-serif;
+         font-size: 35px;
+         font-weight: 700;
+         color: #00FFEA;
+         animation: neon 5s ease-in-out infinite;
+         }
+         @keyframes neon {
+         0% {
+         text-shadow: 0 0 10px #00FFEA, 0 0 20px #00FFEA, 0 0 30px #00FFEA, 0 0 40px #00FFEA, 0 0 70px #00FFEA, 0 0 80px #00FFEA, 0 0 100px #00FFEA, 0 0 150px #00FFEA;
+         }
+         50% {
+         text-shadow: 0 0 5px #00FFEA, 0 0 10px #00FFEA, 0 0 15px #00FFEA, 0 0 20px #00FFEA, 0 0 35px #00FFEA, 0 0 40px #00FFEA, 0 0 50px #00FFEA, 0 0 75px #00FFEA;
+         }
+         100%{
+         text-shadow: 0 0 10px #00FFEA, 0 0 20px #00FFEA, 0 0 30px #00FFEA, 0 0 40px #00FFEA, 0 0 70px #00FFEA, 0 0 80px #00FFEA, 0 0 100px #00FFEA, 0 0 150px #00FFEA;
+         }
+         }
+      </style>
+</html>
